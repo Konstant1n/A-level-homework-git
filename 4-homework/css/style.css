@@ -1,0 +1,61 @@
+/* обмежуєм висоту трави до 150px, кота до 500px, хмаринки до 200px
+хмаринки на 50px відступають від верха екрана */
+
+body {
+    height: calc(100vh - 150px); 
+    margin: 0;
+    background-color: #f5fcff;
+    position: relative;
+}
+
+.sun {
+    z-index: 1;
+    position: absolute;
+    left: calc(100% - 256px);
+}
+
+.cat {
+    position: absolute;
+    left: calc(50% - 166px);
+    top: calc(100% - 355px);
+}
+
+.table {
+    position: absolute;
+    left: calc(-290px);
+    top: calc(100% - 60px);
+    height: 200px;
+}
+
+.bird {
+    position: absolute;
+    left: calc(50px);
+    top: calc(100% - 110px);
+    height: 100px;
+}
+
+
+.cloud {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: 9;
+    background-color:rgba(999, 999, 999, 0.5);
+    background-image: url("../img/cloud.png");
+    background-position: 0 50px;
+    background-repeat: repeat-x;
+    background-size: auto 200px;
+}
+
+.grass {
+    position: absolute;
+    top: calc(100%);
+    height: 150px;
+    width: 100%;
+    background-image: url("../img/grass.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: auto 150px;
+}
+
+
